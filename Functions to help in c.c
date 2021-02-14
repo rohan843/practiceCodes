@@ -28,8 +28,8 @@ int gcd(int num1, int num2)
             {
                 res *= i;
             }
-            num1 /= i;
-            num2 /= i;
+            num1 % i == 0 ? num1 /= i:1;
+            num2 % i == 0 ? num2 /= i:1;
         }
     }
     return res;
