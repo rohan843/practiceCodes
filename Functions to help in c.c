@@ -34,3 +34,21 @@ int gcd(int num1, int num2)
     }
     return res;
 }
+
+
+//returns nth element of 0, 1, 1, 2... fibonnaci series
+int fibo(int n)
+{
+    if(n == 0)
+    {
+        return 0;
+    }
+    if(n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return (fibo(n-1) + fibo(n-2));
+    }
+}
